@@ -7,12 +7,13 @@ import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 
 export default function App() {
+  console.log('this is app component')
   return (
     <div>
       {/* <Header /> */}
       <Navbar />
-      <Categories/>
-      <Carousel />
+      {/* <Categories/>
+      <Carousel /> */}
       <Body />
       <Footer />
     </div>
