@@ -5,9 +5,14 @@ import Demo1 from "../demo/Demo1";
 import Demo2 from "../demo/Demo2";
 import Demo3 from "../demo/Demo3";
 import Demo4 from "../demo/Demo4";
+import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
+import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import ListDemo1 from "../listItem/ListDemo1";
 import ListDemo2 from "../listItem/ListDemo2";
+import ProductList from "../listItem/ProductList";
+import ProductsTable from "../listItem/ProductsTable";
 import UserList from "../listItem/UserList";
+import StateDemo1 from "../state/StateDemo1";
 import "./Body.css";
 
 export default function Body() {
@@ -22,7 +27,12 @@ export default function Body() {
       {/* <ConditionalDemo2 /> */}
       {/* <ListDemo1 /> */}
       {/* <ListDemo2 /> */}
-      <UserList />
+      {/* <UserList /> */}
+      {/* <ProductsTable /> */}
+      {/* <ProductList /> */}
+      {/* <ForceUpdateDemo1 /> */}
+      {/* <ForceUpdateDemo2 /> */}
+      <StateDemo1 />
     </div>
   );
 }
