@@ -13,7 +13,10 @@ import ProductList from "../listItem/ProductList";
 import ProductsTable from "../listItem/ProductsTable";
 import UserList from "../listItem/UserList";
 import Greet from "../Props/Greet";
+import StateDemo0 from "../state/StateDemo0";
 import StateDemo1 from "../state/StateDemo1";
+import StateDemo2 from "../state/StateDemo2";
+import StateDemo3 from "../state/StateDemo3";
 import "./Body.css";
 
 export default function Body() {
@@ -33,14 +36,17 @@ export default function Body() {
       {/* <ProductList /> */}
       {/* <ForceUpdateDemo1 /> */}
       {/* <ForceUpdateDemo2 /> */}
-      {/* <StateDemo1 /> */}
-      <Greet name="Sachin" msg="Good Morning" age={40}>
+      {/* <Greet name='Sachin Tendulkar' msg="Good Morning" age={40}>
         <>
           <h3>This is The Content From Body Component</h3>
           <h4>This is heading-4 from Parent</h4>
         </>
       </Greet>
-      <Greet name="Usman" />
+      <Greet name="Usman" /> */}
+      {/* <StateDemo0 /> */}
+      {/* <StateDemo1 /> */}
+      {/* <StateDemo2 /> */}
+      <StateDemo3 />
     </div>
   );
 }
