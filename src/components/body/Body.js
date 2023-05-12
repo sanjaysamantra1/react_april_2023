@@ -11,12 +11,15 @@ import ListDemo1 from "../listItem/ListDemo1";
 import ListDemo2 from "../listItem/ListDemo2";
 import ProductList from "../listItem/ProductList";
 import ProductsTable from "../listItem/ProductsTable";
+import SearchDemo from "../listItem/SearchDemo";
 import UserList from "../listItem/UserList";
 import Greet from "../Props/Greet";
 import StateDemo0 from "../state/StateDemo0";
 import StateDemo1 from "../state/StateDemo1";
 import StateDemo2 from "../state/StateDemo2";
 import StateDemo3 from "../state/StateDemo3";
+import StateDemo4 from "../state/StateDemo4";
+import StateDemo5 from "../state/StateDemo5";
 import "./Body.css";
 
 export default function Body() {
@@ -46,7 +49,10 @@ export default function Body() {
       {/* <StateDemo0 /> */}
       {/* <StateDemo1 /> */}
       {/* <StateDemo2 /> */}
-      <StateDemo3 />
+      {/* <StateDemo3 /> */}
+      {/* <StateDemo4/> */}
+      {/* <StateDemo5 /> */}
+      <SearchDemo />
     </div>
   );
 }

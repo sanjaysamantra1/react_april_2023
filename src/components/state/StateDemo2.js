@@ -5,9 +5,12 @@ export default class StateDemo2 extends Component {
     count: 0,
   };
   increment = () => {
-    this.setState({
+    /* this.setState({ 
       count: this.state.count + 1,
-    });
+    },()=>{
+      console.log(this.state.count)
+    }); */
+    this.setState((prevState) => ({ count: prevState.count + 1 }));
   };
   render() {
     return (
