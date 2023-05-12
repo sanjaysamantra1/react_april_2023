@@ -5,6 +5,9 @@ import Demo1 from "../demo/Demo1";
 import Demo2 from "../demo/Demo2";
 import Demo3 from "../demo/Demo3";
 import Demo4 from "../demo/Demo4";
+import Addition1 from "../events/Addition1";
+import EventDemo1 from "../events/EventDemo1";
+import EventDemo2 from "../events/EventDemo2";
 import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import ListDemo1 from "../listItem/ListDemo1";
@@ -52,7 +55,10 @@ export default function Body() {
       {/* <StateDemo3 /> */}
       {/* <StateDemo4/> */}
       {/* <StateDemo5 /> */}
-      <SearchDemo />
+      {/* <SearchDemo /> */}
+      {/* <EventDemo1 /> */}
+      {/* <EventDemo2/> */}
+      <Addition1 />
     </div>
   );
 }
