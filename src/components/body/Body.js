@@ -58,7 +58,7 @@ export default function Body() {
       {/* <SearchDemo /> */}
       {/* <EventDemo1 /> */}
       {/* <EventDemo2/> */}
-      <Addition1 />
+      {/* <Addition1 /> */}
     </div>
   );
 }
