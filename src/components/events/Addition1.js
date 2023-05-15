@@ -23,7 +23,7 @@ export default class Addition1 extends Component {
         <input type="number" name="num1" onChange={this.changeHandler} />
         <input type="number" name="num2" onChange={this.changeHandler} />
         <p>
-          Addition of {this.state.num1} and {this.state.num2} is{" "}
+          Addition of {this.state.num1} and {this.state.num2} is
           {+this.state.num1 + +this.state.num2}
         </p>
       </>

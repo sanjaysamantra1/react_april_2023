@@ -1,13 +1,18 @@
 import React from "react";
+import Parent from "../comp-communication/Parent";
 import ConditionalDemo1 from "../conditional/ConditionalDemo1";
 import ConditionalDemo2 from "../conditional/ConditionalDemo2";
 import Demo1 from "../demo/Demo1";
 import Demo2 from "../demo/Demo2";
 import Demo3 from "../demo/Demo3";
 import Demo4 from "../demo/Demo4";
+import Demo5 from "../demo/Demo5";
+import Demo6 from "../demo/Demo6";
 import Addition1 from "../events/Addition1";
+import Addition2 from "../events/Addition2";
 import EventDemo1 from "../events/EventDemo1";
 import EventDemo2 from "../events/EventDemo2";
+import EventDemo3 from "../events/EventDemo3";
 import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import ListDemo1 from "../listItem/ListDemo1";
@@ -16,6 +21,7 @@ import ProductList from "../listItem/ProductList";
 import ProductsTable from "../listItem/ProductsTable";
 import SearchDemo from "../listItem/SearchDemo";
 import UserList from "../listItem/UserList";
+import MemoParent from "../memo/MemoParent";
 import Greet from "../Props/Greet";
 import StateDemo0 from "../state/StateDemo0";
 import StateDemo1 from "../state/StateDemo1";
@@ -58,7 +64,13 @@ export default function Body() {
       {/* <SearchDemo /> */}
       {/* <EventDemo1 /> */}
       {/* <EventDemo2/> */}
+      {/* <EventDemo3 /> */}
       {/* <Addition1 /> */}
+      {/* <Addition2 /> */}
+      {/* <Parent /> */}
+      {/* <Demo5 /> */}
+      {/* <Demo6 /> */}
+      <MemoParent />
     </div>
   );
 }

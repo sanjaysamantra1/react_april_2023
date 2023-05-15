@@ -11,7 +11,7 @@ export default function App() {
     <div>
       {/* <Header /> */}
       <Navbar />
-      <Categories/>
+      {/* <Categories/> */}
       {/* <Carousel /> */}
       <Body />
       <Footer />
