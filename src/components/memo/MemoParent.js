@@ -11,9 +11,9 @@ export default function MemoParent() {
       {/* {console.log("memo parent rendered...")} */}
       <div>MemoParent</div>
       <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() =>setCars([...cars,'maruti'])}>Add New Car</button>
+      <button onClick={() => setCars([...cars, "maruti"])}>Add New Car</button>
       ==========================================================
-      <Counter count={count} />
+      <Counter count={count}  />
       =========================================================
       <Cars cars={cars} />
     </>
