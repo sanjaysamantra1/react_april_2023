@@ -18,6 +18,11 @@ import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import FormDemo1 from "../form/FormDemo1";
 import FormDemo2 from "../form/FormDemo2";
 import FormDemo3 from "../form/FormDemo3";
+import FormDemo4 from "../form/FormDemo4";
+import ClickCounter from "../hoc/ClickCounter";
+import ClickCounterWithHOC from "../hoc/ClickCounterWithHOC";
+import HoverCounter from "../hoc/HoverCounter";
+import HoverCounterWithHOC from "../hoc/HoverCounterWithHOC";
 import UseCallBackDemo1 from "../hooks/UseCallBackDemo1";
 import UseEffectDemo1 from "../hooks/UseEffectDemo1";
 import UseEffectDemo2 from "../hooks/UseEffectDemo2";
@@ -25,6 +30,12 @@ import UseEffectDemo3 from "../hooks/UseEffectDemo3";
 import UseMemoDemo1 from "../hooks/UseMemoDemo1";
 import UseMemoDemo2 from "../hooks/UseMemoDemo2";
 import UseRefDemo1 from "../hooks/UseRefDemo1";
+import HttpDemo1 from "../http/HttpDemo1";
+import HttpDemo2 from "../http/HttpDemo2";
+import HttpDemo3 from "../http/HttpDemo3";
+import HttpDemo4 from "../http/HttpDemo4";
+import HttpDemo5 from "../http/HttpDemo5";
+import HttpDemo6 from "../http/HttpDemo6";
 import LifeCycleDemo1 from "../lifecycle/LifeCycleDemo1";
 import LifeCycleDemo2 from "../lifecycle/LifeCycleDemo2";
 import ListDemo1 from "../listItem/ListDemo1";
@@ -102,7 +113,18 @@ export default function Body() {
       {/* <RefDemo4 /> */}
       {/* <FormDemo1 /> */}
       {/* <FormDemo2 /> */}
-      <FormDemo3 />
+      {/* <FormDemo3 /> */}
+      {/* <FormDemo4 /> */}
+      {/* <HttpDemo1 /> */}
+      {/* <HttpDemo2 /> */}
+      {/* <HttpDemo3 /> */}
+      {/* <HttpDemo4 /> */}
+      {/* <HttpDemo5 /> */}
+      {/* <HttpDemo6 /> */}
+      {/* <ClickCounter />
+      <HoverCounter /> */}
+      <HoverCounterWithHOC />
+      <ClickCounterWithHOC />
     </div>
   );
 }
