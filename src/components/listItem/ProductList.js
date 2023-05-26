@@ -21,15 +21,15 @@ export default function ProductList() {
         <div className="row">
           {products.map((product) => {
             return (
-              <div className="col-sm-3">
-                <div class="card">
-                  <img src={product.image} class="card-img-top" alt="aa" width='200' height='150' />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">{product.category}</h5>
-                    <p class="card-text">{product.title}</p>
-                    <p class="card-text">{product.price}</p>
-                    <p class="card-text">{product.rating.rate}</p>
-                    <a href="#" class="btn btn-primary" onClick={()=>{handleShow(product)}}>
+              <div className="col-sm-3" key={product.id}>
+                <div className="card">
+                  <img src={product.image} className="card-img-top" alt="aa" width='200' height='150' />
+                  <div className="card-body text-center">
+                    <h5 className="card-title">{product.category}</h5>
+                    <p className="card-text">{product.title}</p>
+                    <p className="card-text">{product.price}</p>
+                    <p className="card-text">{product.rating.rate}</p>
+                    <a href="#" className="btn btn-primary" onClick={()=>{handleShow(product)}}>
                       View Details
                     </a>
                   </div>
@@ -45,12 +45,12 @@ export default function ProductList() {
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-              <div class="card">
-                  <img src={selectedProduct.image} class="card-img-top" alt="aa" width='200' height='150' />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">{selectedProduct.category}</h5>
-                    <p class="card-text">{selectedProduct.title}</p>
-                    <p class="card-text">{selectedProduct.price}</p>
+              <div className="card">
+                  <img src={selectedProduct.image} className="card-img-top" alt="aa" width='200' height='150' />
+                  <div className="card-body text-center">
+                    <h5 className="card-title">{selectedProduct.category}</h5>
+                    <p className="card-text">{selectedProduct.title}</p>
+                    <p className="card-text">{selectedProduct.price}</p>
                   </div>
                 </div>
         </Modal.Body>

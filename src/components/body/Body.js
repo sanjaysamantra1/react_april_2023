@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Parent from "../comp-communication/Parent";
 import ConditionalDemo1 from "../conditional/ConditionalDemo1";
 import ConditionalDemo2 from "../conditional/ConditionalDemo2";
@@ -50,6 +51,11 @@ import RefDemo1 from "../ref/RefDemo1";
 import RefDemo2 from "../ref/RefDemo2";
 import RefDemo3 from "../ref/RefDemo3";
 import RefDemo4 from "../ref/RefDemo4";
+import AboutUs from "../routing/AboutUs";
+import Careers from "../routing/Careers";
+import ContactUs from "../routing/ContactUs";
+import Home from "../routing/Home";
+import NotFound from "../routing/NotFound";
 import StateDemo0 from "../state/StateDemo0";
 import StateDemo1 from "../state/StateDemo1";
 import StateDemo2 from "../state/StateDemo2";
@@ -123,8 +129,19 @@ export default function Body() {
       {/* <HttpDemo6 /> */}
       {/* <ClickCounter />
       <HoverCounter /> */}
-      <HoverCounterWithHOC />
-      <ClickCounterWithHOC />
+      {/* <HoverCounterWithHOC />
+      <ClickCounterWithHOC /> */}
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/aboutus" element={<AboutUs />} />
+        <Route exact path="/careers" element={<Careers />} />
+        <Route exact path="/contactus" element={<ContactUs />} />
+        <Route exact path="/productlist" element={<ProductList />} />
+        <Route path="*" element={<NotFound />} /> 
+      </Routes>
+
     </div>
   );
 }

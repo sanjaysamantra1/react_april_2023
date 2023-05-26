@@ -1,4 +1,6 @@
 import React from "react";
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,16 +12,19 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <NavLink to="/" className="nav-link">Home </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About-us</a>
+          <NavLink to="/aboutus" className="nav-link">About-us </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Careers</a>
+          <NavLink to="/careers" className="nav-link">Careers </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contact us</a>
+          <NavLink to="/contactus" className="nav-link">Contact-Us </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/productlist" className="nav-link">ProductList</NavLink>
         </li>
       </ul>
       <form className="d-flex">
