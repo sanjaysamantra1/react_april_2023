@@ -20,7 +20,7 @@ export default function ListDemo2() {
         </thead>
         <tbody>
         {employees.map((emp, ind) => {
-            return <tr>
+            return <tr key={ind}>
               {Object.keys(emp).map((key) =>{
                 return <td key={key}>{emp[key]}</td>
               })}

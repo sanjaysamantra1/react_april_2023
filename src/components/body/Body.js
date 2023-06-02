@@ -1,4 +1,5 @@
 import React from "react";
+import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Parent from "../comp-communication/Parent";
 import ConditionalDemo1 from "../conditional/ConditionalDemo1";
@@ -41,7 +42,8 @@ import LifeCycleDemo1 from "../lifecycle/LifeCycleDemo1";
 import LifeCycleDemo2 from "../lifecycle/LifeCycleDemo2";
 import ListDemo1 from "../listItem/ListDemo1";
 import ListDemo2 from "../listItem/ListDemo2";
-import ProductList from "../listItem/ProductList";
+import ProductDetails from "../listItem/ProductDetails";
+import ProductDetails2 from "../listItem/ProductDetails2";
 import ProductsTable from "../listItem/ProductsTable";
 import SearchDemo from "../listItem/SearchDemo";
 import UserList from "../listItem/UserList";
@@ -52,10 +54,13 @@ import RefDemo2 from "../ref/RefDemo2";
 import RefDemo3 from "../ref/RefDemo3";
 import RefDemo4 from "../ref/RefDemo4";
 import AboutUs from "../routing/AboutUs";
+import Authenticate from "../routing/Authenticate";
 import Careers from "../routing/Careers";
 import ContactUs from "../routing/ContactUs";
+import ContractJobs from "../routing/ContractJobs";
 import Home from "../routing/Home";
 import NotFound from "../routing/NotFound";
+import PermanentJobs from "../routing/PermanentJobs";
 import StateDemo0 from "../state/StateDemo0";
 import StateDemo1 from "../state/StateDemo1";
 import StateDemo2 from "../state/StateDemo2";
@@ -63,6 +68,9 @@ import StateDemo3 from "../state/StateDemo3";
 import StateDemo4 from "../state/StateDemo4";
 import StateDemo5 from "../state/StateDemo5";
 import "./Body.css";
+
+// import ProductList from "../listItem/ProductList";
+const ProductList = React.lazy(() => import("../listItem/ProductList"));
 
 export default function Body() {
   return (
@@ -132,16 +140,35 @@ export default function Body() {
       {/* <HoverCounterWithHOC />
       <ClickCounterWithHOC /> */}
 
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/aboutus" element={<AboutUs />} />
-        <Route exact path="/careers" element={<Careers />} />
-        <Route exact path="/contactus" element={<ContactUs />} />
-        <Route exact path="/productlist" element={<ProductList />} />
-        <Route path="*" element={<NotFound />} /> 
-      </Routes>
-
+      <Suspense fallback={<h2>Loading...</h2>}>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/aboutus" element={<AboutUs />} />
+          <Route exact path="/careers" element={<Careers />}>
+            <Route index element={<PermanentJobs />} />
+            <Route path="permanent" element={<PermanentJobs />} />
+            <Route path="contract" element={<ContractJobs />} />
+          </Route>
+          <Route exact path="/contactus" element={<ContactUs />} />
+          <Route
+            exact
+            path="/productlist"
+            element={
+              <Authenticate>
+                <ProductList />
+              </Authenticate>
+            }
+          />
+          <Route
+            exact
+            path="/productdetails/:id"
+            element={<ProductDetails />}
+          />
+          <Route exact path="/productdetails" element={<ProductDetails2 />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }

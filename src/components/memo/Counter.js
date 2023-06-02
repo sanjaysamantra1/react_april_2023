@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Counter({ count }) {
   return (
@@ -10,3 +11,7 @@ function Counter({ count }) {
   );
 }
 export default React.memo(Counter);
+
+Counter.propTypes = {
+  count: PropTypes.number,
+};

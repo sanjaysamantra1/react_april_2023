@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from 'react-modal';
 
 export default function StateDemo5() {
-  let [employees, setEmployees] = useState([
+  let [employees] = useState([
     { eId: 101, name: "sanjay", sal: 5000 },
     { eId: 104, name: "deepak", sal: 8000 },
     { eId: 103, name: "sameer", sal: 7000 },
